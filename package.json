@@ -1,0 +1,21 @@
+{
+  "name": "goat-store",
+  "version": "1.0.0",
+  "description": "Learning node with a mongo database and a vue client side.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "standard --fix"
+  },
+  "keywords": [
+    "goats"
+  ],
+  "author": "euriphides@gmail.com",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}

@@ -1,8 +1,10 @@
 const http = require('http')
+let hits = 0
 
 const httpRequestHandler = (request, response) => {
   console.log(request.url)
-  response.end('hi')
+  hits += 1
+  response.end(`hi, you've had ${hits}`)
 }
 
 const server = http.createServer(httpRequestHandler)

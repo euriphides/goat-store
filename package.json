@@ -4,8 +4,9 @@
   "description": "Learning node with a mongo database and a vue client side.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "lint": "standard --fix"
+    "start": "node --inspect index.js",
+    "lint": "standard --fix",
+    "db": "mongod --dbpath ./db"
   },
   "keywords": [
     "goats"

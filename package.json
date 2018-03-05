@@ -4,9 +4,9 @@
   "description": "Learning node with a mongo database and a vue client side.",
   "main": "index.js",
   "scripts": {
-    "start": "node --inspect index.js",
+    "start": "node index.js",
     "lint": "standard --fix",
-    "db": "mongod --dbpath ./db"
+    "dev": "nodemon --inspect index.js"
   },
   "keywords": [
     "goats"
@@ -17,6 +17,12 @@
     "extends": "standard"
   },
   "devDependencies": {
+    "nodemon": "^1.17.1",
     "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.8"
   }
 }

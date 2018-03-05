@@ -1,23 +1,9 @@
-
-
-install intellij into kubuntu virtual machine
-install mongo
-install mongo server
-
 list of objectives:
 
-write a vue application that does crud (create read update delete)
 node will do crud over an http api
 persistence mechanism will be mongo
 build unit tests for some of the node code
 use postman to test our api
 
 next:
-start using express - it has a lot of node http shenanigans that we don't want to handle - it will handle it for use
-learn to read and write express middleware
-
-create a mongo database, and have the process running 
-learn how to work with mongoose - an npm package to work with mongo
-
-
-
+Add HTTP error messages for mongoose error responses

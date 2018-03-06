@@ -22,5 +22,24 @@ app.get('/', (req, res) => {
   ]})
 })
 
-app.listen(port)
-console.log(`server started at http://localhost:${port}`)
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {
+  const err = new Error('Not Found')
+  err.status = 404
+  next(err)
+})
+
+// Error Handler
+app.use(function (err, req, res, next) {
+  res.status(err.status || 500)
+  res.json({
+    error: {
+      message: err.message
+    }
+  })
+  next(err)
+})
+
+app.listen(port, function () {
+  console.log(`server started at http://localhost:${port}`)
+})

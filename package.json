@@ -13,6 +13,9 @@
   ],
   "author": "euriphides@gmail.com",
   "license": "MIT",
+  "engines": {
+    "node": "8.x"
+  },
   "eslintConfig": {
     "extends": "standard"
   },

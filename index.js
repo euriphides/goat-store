@@ -1,8 +1,11 @@
 require('dotenv').config()
 const express = require('express')
+const cors = require('cors')
 const port = 8080
 const app = express()
 require('./db')
+
+app.use(cors())
 
 app.use((req, res, next) => {
   console.log({url: req.url})
